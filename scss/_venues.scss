@@ -1,0 +1,21 @@
+/*************************
+Venues Page Styles
+**************************/
+
+.venue-item {
+  margin: 2em auto 3em auto;
+  border-bottom: 2px solid $blue-hover;
+  text-align: center;
+  iframe {
+    margin: 1em auto 3em auto;
+  }
+}
+
+.venue-title {
+  @media (min-width: $brk-lrg) {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}

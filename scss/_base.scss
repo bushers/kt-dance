@@ -1,0 +1,104 @@
+/*************************
+Variables
+**************************/
+
+$bg-dark     : #000307;
+$blue-hover  : #23527c;
+$text-white  : #cccccc;
+$text-dark   : #141414;
+
+$brk-sm      : 530px;
+$brk-md      : 768px;
+$brk-lrg     : 930px;
+
+
+/*************************
+General Styles
+**************************/
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  color: $text-white;
+  background-color: $bg-dark;
+  font-family: Raleway, Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 1px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  font-weight: inherit;
+  font-size: 2em;
+  padding: 0.5em;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+p {
+  padding: 0.5em;
+  margin: 0;
+}
+
+a {
+  color: $text-white;
+  text-decoration: none;
+}
+
+section {
+  padding: 2em 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 0.5em;
+  @media (min-width: $brk-sm) {
+    padding: 0 1em;
+  }
+}
+
+.btn {
+  border: 1px solid #ddd;
+  padding: 1em;
+  border-radius: 4px;
+  margin: 0.5em;
+  transition: background-color 0.3s ease-in-out;
+  &:hover {
+    background-color: $blue-hover;
+    cursor: pointer;
+  }
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+  background-color: transparent;
+  color: inherit;
+}
+
+.sub-title {
+  max-width: 600px;
+  margin: 1em auto;
+  border-radius: 4px;
+  background-color: rgba(35, 82, 124, 0.8);
+}

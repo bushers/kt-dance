@@ -1,0 +1,69 @@
+/*************************
+Timetable Styles
+**************************/
+
+.flex-row {
+  img {
+    max-height: 360px;
+  }
+  @media (min-width: $brk-lrg) {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    img {
+      max-width: 500px;
+      max-height: 100%;
+    }
+  }
+}
+
+.ttable-blurb {
+  max-width: 500px;
+  margin: auto;
+  padding: 1em 0;
+}
+
+.ttable-price {
+  display: block;
+  margin-left: 1em;
+}
+
+#ttable-buttons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: auto;
+}
+
+.ttable-section {
+  overflow: hidden;
+}
+
+.ttable-item {
+  background-color: rgba(35, 82, 124, 0.5);
+  border-radius: 4px;
+  padding: 1em 0;
+  margin: 2em auto;
+  width: 100%;
+  max-width: 50em;
+  position: relative !important;
+  .table {
+    width: 90%;
+    margin: auto;
+    thead {
+      text-align: left;
+      font-size: 1.1em;
+    }
+    caption {
+      font-size: 1.4em;
+      margin: 0.5em 0;
+    }
+    th, td {
+      padding: 0.3em;
+      max-width: 360px;
+    }
+  }
+}

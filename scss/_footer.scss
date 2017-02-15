@@ -1,0 +1,41 @@
+/*************************
+Footer
+**************************/
+
+.footer {
+  border-top: 1px solid $blue-hover;
+  padding: 2em 1em 1em 1em;
+  .container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+}
+
+.footer-logo {
+  max-width: 140px;
+}
+
+.fb-iframe-container {
+
+}
+
+.footer-social-icons {
+  margin: 1em;
+  & a {
+    display: block;
+    margin: 0 0.3em;
+    transition: color 0.3s ease-in-out;
+  }
+  & a:hover {
+    color: $blue-hover;
+  }
+}
+
+.copyright {
+  text-align: center;
+  font-size: 0.8em;
+  a {
+    color: $blue-hover;
+  }
+}

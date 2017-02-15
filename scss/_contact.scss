@@ -1,0 +1,14 @@
+/*************************
+Contact Page Styles
+**************************/
+
+.contact-blurb {
+  max-width: 600px;
+  text-align: center;
+  margin: auto;
+  border-radius: 4px;
+  background-color: rgba(35, 82, 124, 0.8);
+  hr {
+    max-width: 50%;
+  }
+}

@@ -1,0 +1,46 @@
+/*************************
+Classes
+**************************/
+
+#classes-buttons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: auto;
+  @media (min-width: $brk-md) {
+    justify-content: center;
+  }
+}
+
+.classes-item {
+  border-top: 1px solid $blue-hover;
+  margin: 2em auto;
+  @media (min-width: $brk-lrg) {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  div {
+    margin: 1em;
+  }
+  img {
+    @media (min-width: $brk-sm) {
+      max-width: 480px;
+    }
+  }
+  .classes-item-blurb {
+    background-color: rgba(35, 82, 124, 0.5);
+    border-radius: 4px;
+  }
+  .btn {
+    text-align: center;
+    margin: auto;
+    max-width: 300px;
+  }
+}
+
+.classes-ages {
+  text-align: center;
+}

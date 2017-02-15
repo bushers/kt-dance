@@ -1,0 +1,62 @@
+/*************************
+Header
+**************************/
+
+.header {
+  padding: 0.5em 0;
+  border-bottom: 1px solid $blue-hover;
+}
+
+.header > .container {
+  @media (min-width: $brk-lrg) {
+    display: flex;
+  }
+}
+
+.header-brand-social-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  text-align: center;
+  img {
+    display: inline-block;
+    max-width: 115px;
+  }
+}
+
+.header-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3em;
+  & a {
+    margin: 0 0.3em;
+    transition: color 0.3s ease-in-out;
+  }
+  & a:hover {
+    color: $blue-hover;
+  }
+}
+
+
+.main-nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  @media (min-width: $brk-lrg) {
+    margin-left: auto;
+  }
+  a {
+    text-transform: uppercase;
+    padding: 0.6em;
+    margin: auto;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+    &:hover {
+      background-color: $blue-hover;
+    }
+  }
+}
