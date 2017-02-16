@@ -8,15 +8,12 @@ $( document ).ready(function() {
 	var $classes = $('.classes-section');
 	var $gallery = $('.img-gallery');
 	var $ttable = $('.ttable-section');
-	$classes.hide();
-	$ttable.hide();
 
 	$classes.isotope({ itemSelector: ".classes-item" });
 	$gallery.isotope({ itemSelector: ".thumbnail" });
 	$ttable.isotope({ itemSelector: ".ttable-item" });
 
 	$("#classes-buttons").on("click", "button", function() {
-		$classes.show();
 		var filterValue = $(this).attr('data-filter');
   	$classes.isotope({ filter: filterValue });
 	});
@@ -25,7 +22,6 @@ $( document ).ready(function() {
   	$gallery.isotope({ filter: filterValue });
 	});
 	$("#ttable-buttons").on("click", "button", function() {
-		$ttable.show();
 		var filterValue = $(this).attr('data-filter');
 		$ttable.isotope({ filter: filterValue });
 	});
