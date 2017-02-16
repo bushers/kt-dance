@@ -51,10 +51,15 @@ Header
   }
   a {
     text-transform: uppercase;
-    padding: 0.6em;
+    padding: 0.2em;
+    font-size: 0.9em;
     margin: auto;
     border-radius: 4px;
     transition: background-color 0.3s ease-in-out;
+    @media (min-width: $brk-md) {
+      padding: 0.6em;
+      font-size: 1em;
+    }
     &:hover {
       background-color: $blue-hover;
     }
