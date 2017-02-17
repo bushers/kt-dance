@@ -2,6 +2,20 @@
 About
 **************************/
 
+.test-link {
+  display: inline-block;
+  font-size: 1.2em;
+  border-radius: 4px;
+  margin: 0.5em 0;
+  padding: 0.2em;
+  text-decoration: underline;
+}
+
+.test-item {
+  max-width: 600px;
+  margin: 2em auto;
+}
+
 .about-section {
   margin: 3em auto;
   max-width: 800px;
