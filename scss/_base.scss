@@ -96,6 +96,16 @@ button {
   color: inherit;
 }
 
+.jumbotron {
+  background: url(../img/banner.JPG) no-repeat center 30%;
+  background-size: cover;
+  font-size: 1.1em;
+  padding: 1em 0;
+  img {
+    width: 160px;
+  }
+}
+
 .sub-title {
   max-width: 600px;
   margin: 1em auto;

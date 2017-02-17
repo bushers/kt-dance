@@ -2,15 +2,6 @@
 Homepage Styles
 **************************/
 
-.jumbotron {
-  background: url(../img/banner.JPG) no-repeat center 30%;
-  background-size: cover;
-  font-size: 1.1em;
-  padding: 1em 0;
-  img {
-    width: 160px;
-  }
-}
 
 .jumbotron-title {
   @media (min-width: $brk-md) {
