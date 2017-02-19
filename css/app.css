@@ -57,10 +57,13 @@ section {
 
 .btn {
   border: 1px solid #ddd;
-  padding: 1em;
+  padding: 0.6em;
   border-radius: 4px;
   margin: 0.5em;
   transition: background-color 0.3s ease-in-out; }
+  @media (min-width: 768px) {
+    .btn {
+      padding: 1em; } }
   .btn:hover {
     background-color: #23527c;
     cursor: pointer; }
@@ -382,6 +385,7 @@ Contact Page Styles
 .contact-blurb {
   max-width: 600px;
   text-align: center;
+  padding-bottom: 2em;
   margin: auto;
   border-radius: 4px;
   background-color: rgba(35, 82, 124, 0.8); }
@@ -393,11 +397,14 @@ Footer
 **************************/
 .footer {
   border-top: 1px solid #23527c;
-  padding: 2em 1em 1em 1em; }
+  padding: 3em 1em 1em 1em; }
   .footer .container {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row wrap;
+    justify-content: center;
     align-items: center; }
+    .footer .container div {
+      padding: 0.5em; }
 
 .footer-logo {
   max-width: 140px; }

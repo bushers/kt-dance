@@ -4,11 +4,15 @@ Footer
 
 .footer {
   border-top: 1px solid $blue-hover;
-  padding: 2em 1em 1em 1em;
+  padding: 3em 1em 1em 1em;
   .container {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row wrap;
+    justify-content: center;
     align-items: center;
+    div {
+      padding: 0.5em;
+    }
   }
 }
 

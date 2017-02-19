@@ -78,7 +78,10 @@ section {
 
 .btn {
   border: 1px solid #ddd;
-  padding: 1em;
+  padding: 0.6em;
+  @media (min-width: $brk-md) {
+    padding: 1em;
+  }
   border-radius: 4px;
   margin: 0.5em;
   transition: background-color 0.3s ease-in-out;

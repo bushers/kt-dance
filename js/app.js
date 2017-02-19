@@ -13,6 +13,10 @@ $( document ).ready(function() {
 	$gallery.isotope({ itemSelector: ".thumbnail" });
 	$ttable.isotope({ itemSelector: ".ttable-item" });
 
+	//Set initial filter values
+	$classes.isotope({ filter: '.iso-ballet' });
+	$ttable.isotope({ filter: '.iso-htl' });
+
 	$("#classes-buttons").on("click", "button", function() {
 		var filterValue = $(this).attr('data-filter');
   	$classes.isotope({ filter: filterValue });
@@ -25,6 +29,7 @@ $( document ).ready(function() {
 		var filterValue = $(this).attr('data-filter');
 		$ttable.isotope({ filter: filterValue });
 	});
+
 
 	//Add overlay when gallery img is clicked
 	var $overlay = $('<div id="gallery-overlay"></div>');
