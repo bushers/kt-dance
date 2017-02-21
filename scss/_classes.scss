@@ -14,12 +14,14 @@ Classes
 }
 
 .classes-section {
-
+  overflow: hidden;
+  height: auto !important;
 }
 
 .classes-item {
   border-top: 1px solid $blue-hover;
   margin: 2em auto;
+  position: relative !important;
   @media (min-width: $brk-lrg) {
     display: flex;
     flex-flow: row nowrap;

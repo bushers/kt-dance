@@ -247,9 +247,14 @@ Classes
     #classes-buttons {
       justify-content: center; } }
 
+.classes-section {
+  overflow: hidden;
+  height: auto !important; }
+
 .classes-item {
   border-top: 1px solid #23527c;
-  margin: 2em auto; }
+  margin: 2em auto;
+  position: relative !important; }
   @media (min-width: 930px) {
     .classes-item {
       display: flex;
