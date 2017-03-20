@@ -267,9 +267,9 @@ Classes
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-between;
-      align-items: center; } }
+      align-items: flex-start; } }
   .classes-item div {
-    margin: 1em; }
+    margin: 1em 0.5em; }
   @media (min-width: 530px) {
     .classes-item img {
       max-width: 480px; } }
@@ -278,6 +278,9 @@ Classes
     border-radius: 4px;
     margin: 0 auto 1em auto;
     max-width: 30em; }
+    @media (min-width: 930px) {
+      .classes-item .classes-item-blurb {
+        margin-top: 3.75em; } }
   .classes-item .btn {
     text-align: center;
     margin: auto;
