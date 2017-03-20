@@ -16,19 +16,28 @@ Header
 .header-brand-social-container {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: center;
+  @media (min-width: $brk-md) {
+    justify-content: space-between;
+  }
 }
 
 .navbar-brand {
   text-align: center;
   img {
     display: inline-block;
-    max-width: 115px;
+    max-width: 90px;
+    @media (min-width: $brk-md) {
+      max-width: 115px;
+    }
   }
 }
 
 .header-social {
-  display: flex;
+  display: none;
+  @media (min-width: $brk-md) {
+    display: flex;
+  }
   justify-content: center;
   align-items: center;
   font-size: 1.3em;

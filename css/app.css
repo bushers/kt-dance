@@ -79,8 +79,10 @@ button {
   background: url(../img/banner.JPG) no-repeat center 30%;
   background-size: cover;
   min-height: 300px;
-  font-size: 1.1em;
   padding: 1em 0; }
+  @media (min-width: 768px) {
+    .jumbotron {
+      font-size: 1.1em; } }
   .jumbotron img {
     width: 160px; }
 
@@ -104,19 +106,28 @@ Header
 .header-brand-social-container {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between; }
+  justify-content: center; }
+  @media (min-width: 768px) {
+    .header-brand-social-container {
+      justify-content: space-between; } }
 
 .navbar-brand {
   text-align: center; }
   .navbar-brand img {
     display: inline-block;
-    max-width: 115px; }
+    max-width: 90px; }
+    @media (min-width: 768px) {
+      .navbar-brand img {
+        max-width: 115px; } }
 
 .header-social {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   font-size: 1.3em; }
+  @media (min-width: 768px) {
+    .header-social {
+      display: flex; } }
   .header-social a {
     margin: 0 0.3em;
     transition: color 0.3s ease-in-out; }
@@ -156,13 +167,6 @@ Homepage Styles
     align-items: flex-start; }
     .jumbotron-title > * {
       margin: 0; } }
-
-@media (min-width: 768px) {
-  .jumbotron-blurb-container {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: flex-start;
-    justify-content: space-around; } }
 
 .jumbotron-blurb {
   max-width: 520px;
@@ -240,7 +244,7 @@ Classes
 #classes-buttons {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   max-width: 800px;
   margin: auto; }
   @media (min-width: 768px) {
@@ -268,7 +272,9 @@ Classes
       max-width: 480px; } }
   .classes-item .classes-item-blurb {
     background-color: rgba(35, 82, 124, 0.5);
-    border-radius: 4px; }
+    border-radius: 4px;
+    margin: 0 auto 1em auto;
+    max-width: 30em; }
   .classes-item .btn {
     text-align: center;
     margin: auto;
@@ -283,7 +289,7 @@ Gallery
 #gallery-buttons {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   max-width: 800px;
   margin: 1em auto; }
   @media (min-width: 768px) {

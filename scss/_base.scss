@@ -103,7 +103,9 @@ button {
   background: url(../img/banner.JPG) no-repeat center 30%;
   background-size: cover;
   min-height: 300px;
-  font-size: 1.1em;
+  @media (min-width: $brk-md) {
+    font-size: 1.1em;
+  }
   padding: 1em 0;
   img {
     width: 160px;
