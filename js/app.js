@@ -4,6 +4,12 @@ AOS.init();
 
 $( document ).ready(function() {
 
+	//Remove jumbotron animation delay for mobile
+	if ($(window).width() < 768) {
+		$('.jumbotron-blurb').attr('data-aos-delay', '0');
+	}
+
+
 	//Isotope filtering
 	var $classes = $('.classes-section');
 	var $gallery = $('.img-gallery');

@@ -108,7 +108,10 @@ button {
   }
   padding: 1em 0;
   img {
-    width: 160px;
+    width: 135px;
+    @media (min-width: $brk-md) {
+      width: 160px;
+    }
   }
 }
 

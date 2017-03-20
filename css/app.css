@@ -84,7 +84,10 @@ button {
     .jumbotron {
       font-size: 1.1em; } }
   .jumbotron img {
-    width: 160px; }
+    width: 135px; }
+    @media (min-width: 768px) {
+      .jumbotron img {
+        width: 160px; } }
 
 .sub-title {
   max-width: 600px;
