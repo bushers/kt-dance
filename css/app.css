@@ -249,7 +249,7 @@ Classes
   flex-flow: row wrap;
   justify-content: flex-start;
   max-width: 800px;
-  margin: auto; }
+  margin: 1em auto; }
   @media (min-width: 768px) {
     #classes-buttons {
       justify-content: center; } }
@@ -353,7 +353,7 @@ Timetable Styles
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin: auto; }
+  margin: 1em auto; }
 
 .ttable-section {
   overflow: hidden; }

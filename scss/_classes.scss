@@ -7,7 +7,7 @@ Classes
   flex-flow: row wrap;
   justify-content: flex-start;
   max-width: 800px;
-  margin: auto;
+  margin: 1em auto;
   @media (min-width: $brk-md) {
     justify-content: center;
   }
