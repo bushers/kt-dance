@@ -9,7 +9,6 @@ $( document ).ready(function() {
 		$('.jumbotron-blurb').attr('data-aos-delay', '0');
 	}
 
-
 	//Isotope filtering
 	var $classes = $('.classes-section');
 	var $gallery = $('.img-gallery');
