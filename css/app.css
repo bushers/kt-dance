@@ -210,7 +210,7 @@ Homepage Styles
       font-weight: bold; }
 
 .intro-section-2 {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/intro-img02.jpg) no-repeat center center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/intro-img02.jpg) no-repeat center center;
   background-size: cover;
   color: #cccccc; }
   .intro-section-2 .btn {
